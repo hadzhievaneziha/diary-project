@@ -9,7 +9,9 @@ public class Grade {
 	/**
 	 * Default constructor
 	 */
-	public Grade() {
+	public Grade(int grade, String courseName) {
+		this.grade = grade;
+		this.course = new Course(courseName);
 	}
 
 	public int getGrade() {
@@ -18,6 +20,10 @@ public class Grade {
 
 	public void setGrade(int grade) {
 		this.grade = grade;
+	}
+	
+	public Course getCourse() {
+		return course;
 	}
 
 }

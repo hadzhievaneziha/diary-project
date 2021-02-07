@@ -2,8 +2,8 @@ Feature: Родител
 
   Scenario Outline: Проверка на оценките от родител
     Given Отваря страницата за проверка на оценки 
-    When Въвежда име на ученик <pupilName>
-    Then Вижда оценките на ученика:   <subjects>, <grades> 
+    When Въвежда име на ученик: <pupilName>
+    Then Вижда списъка с оценки: <grades> 
 
     Examples: 
       | pupilName  | grades														  						  	 	|

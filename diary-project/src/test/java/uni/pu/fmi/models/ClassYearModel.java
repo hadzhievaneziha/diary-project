@@ -13,7 +13,7 @@ public class ClassYearModel {
 	private String selectedClassYear;
 
 	public void navigateToCreateClassYear() {
-		System.out.println("Екранът за създажане на паралелки.");
+		System.out.println("Екранът за създаване на паралелки.");
 	}
 
 	public void setClassYearName(String name) {

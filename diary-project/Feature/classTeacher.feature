@@ -4,7 +4,8 @@ Feature:  Класен ръководител
     Given Отваряне на страницата за добавяне на класен ръководител
     When Потребителят въвежда име на класен ръководител <teacherName>
     And Въвеждане на име на паралелка <classYearName>
-    Then Вижда съобщение <thenMessage>
+    And Натиска бутона за добавяне
+    Then Вижда съобщение за добавяне на класен ръководител <expectedMessage>
 
    Examples: 
       | teacherName 		 | classYearName | expectedMessage 																	 |
