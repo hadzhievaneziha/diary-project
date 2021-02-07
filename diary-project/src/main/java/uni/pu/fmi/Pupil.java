@@ -7,7 +7,8 @@ public class Pupil extends User {
 	/**
 	 * Default constructor
 	 */
-	public Pupil() {
+	public Pupil(String firstName, String lastName) {
+		super(firstName, lastName);
 	}
 
 	public Set<ClassYear> classYear;

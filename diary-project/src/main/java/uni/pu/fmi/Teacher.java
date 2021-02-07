@@ -7,7 +7,8 @@ public class Teacher extends User {
 	/**
 	 * Default constructor
 	 */
-	public Teacher() {
+	public Teacher(String firstName, String lastName) {
+		super(firstName, lastName);
 	}
 
 	public ClassYear classYear;

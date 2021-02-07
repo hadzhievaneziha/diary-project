@@ -14,18 +14,26 @@ public class ClassYear {
     /**
      * Default constructor
      */
-    public ClassYear() {
+    public ClassYear(String name, String teacherFirstName, String teacherLastName) {
+    	this.name = name;
+    	this.teacher = new Teacher(teacherFirstName, teacherLastName);
     }
 
     public String getName() {
         return name;
     }
 
-    /**
-     * 
-     */
     public void setName(String name) {
 		this.name = name;
 	}
+
+	public Teacher getTeacher() {
+	    return teacher;
+	}
+	
+	public void setTeacher(Teacher teacher) {
+		this.teacher = teacher;
+	}
+
 
 }

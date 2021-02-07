@@ -7,7 +7,8 @@ public class Parent extends User {
 	/**
 	 * Default constructor
 	 */
-	public Parent() {
+	public Parent(String firstName, String lastName) {
+		super(firstName, lastName);
 	}
 
 	public Set<Pupil> pupils;

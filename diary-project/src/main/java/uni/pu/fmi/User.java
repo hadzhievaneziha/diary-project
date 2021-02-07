@@ -9,7 +9,9 @@ public class User {
 	/**
 	 * Default constructor
 	 */
-	public User() {
+	public User(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
 
 	public String getEmail() {
@@ -19,6 +21,19 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public String getFullName() {
+		return this.firstName + " " + this.lastName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
 
 	public String getPassword() {
 		return password;
